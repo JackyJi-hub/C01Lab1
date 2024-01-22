@@ -28,7 +28,7 @@ const AddTask = (onAddTask) => {
     });
 
     return <View style={styles.todoListContainer}>
-        <TextInput style={styles.todoListContainer} value={title} onChangeText={setTitle}/>
+        <TextInput style={styles.todoListContainer} value={title} onChangeText={setTitle} placeholder="Enter your text here"/>
         <Button title="Add Task" onPress={handleAddTask}/>
     </View>
 }
